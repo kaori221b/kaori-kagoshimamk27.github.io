@@ -1,222 +1,54 @@
 <!DOCTYPE html>
-<html data-theme="emerald">
+<html>
 
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-PNMSF6W');</script>
-  <!-- End Google Tag Manager -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <html lang="en">
+
+  </html>
+  <meta charset="utf-8">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@wakappa_wakatta" />
   <meta property="og:url" content="https://saruwakakun.com/best" />
-  <meta property="og:title" content="自己紹介ページ" />
-  <meta property="og:description" content="鹿児島.mk #26 Webサイト制作体験会 (HTML/CSS入門)で作りました！" />
+  <meta property="og:title" content="作業報告" />
+  <meta property="og:description" content="鹿児島.mk #27 参加しました" />
   <meta property="og:image"
-    content="https://raw.githubusercontent.com/kaori221b/kaori221b.github.io/main/image/ogp.png" />
-
-  <title>かおり</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <!-- ここにCSSフレームワークの参照を追加 -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    content="https://raw.githubusercontent.com/kaori221b/kagoshimamk_02.github.io/images/ogp.jpg" />
+  <title>My test page</title>
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.41.0/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!--Googleフォント-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;800;900&display=swap"
-    rel="stylesheet">
-  <!-- ここにCSSの参照を追加 -->
-  <link rel="stylesheet" href="index.css" />
-  <link rel="icon" href="image/favicon.ico">
-
-
+  <link href="index.css" rel="stylesheet" type="text/css">
+  <script defer src="./main.js"></script>
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNMSF6W" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <header class="navbar py-4 text-neutral-content">
-    <div class="navbar-start"></div>
-    <div class="navbar-center">
-      <!--ここにページのタイトルを追加-->
-      <h1 class="btn btn-ghost normal-case title">KAORI
-      </h1>
+
+
+
+  <div class="main_content">
+    <h1>鹿児島.mk #27 JavaScript入門</h1>
+    <button class="toggle-mode"><img src="images/click.png" alt="" style="width: 25%;">
+      <img src="images/mk_0.png" alt="鹿児島.mkの画像" class="main_visual">
+    </button>
+    <p style="font-size: 2em; font-weight: bold;">今日はJavaScriptの体験</p>
+    <div style="text-align: left; width: 80%; margin:3% auto;">
+      <p>やったこと</p>
+      <ul>
+        <li>クリックで画像の変更</li>
+        <li>クリックでダークモード切り替え</li>
+        <li>任意のテキスト代入。夢小説でしか活用場面思い浮かばない。</li>
+      </ul>
     </div>
-    <div class="navbar-end"></div>
-  </header>
-  <main>
-    <div id="profile">
-      <div class="avatar py-4">
-        <div class="w-24 rounded-full ring ring-error ring-offset-base-100 ring-offset-2">
-          <img src="image/icon.jpg" />
-        </div>
-      </div>
-      <div class="flex flex-col w-10/12 content" style="max-width: 680px;">
-        <!-- ここにソーシャルアイコンを追加-->
-        <div class="btn-group h-20 mb-8">
-          <a href="https://twitter.com/okome_oishiine" class="btn btn-ghost h-20 w-1/3" style="color: white;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
-              <path
-                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
-              </path>
-            </svg>
-          </a>
-
-          <a href="https://www.instagram.com/kaori_221b/" class="btn btn-ghost h-20 w-1/3" style="color: white;">
-            <svg id="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 503.84 503.84" 　 width="24" height="24"
-              viewBox="0 0 24 24" class="fill-current">
-              <path
-                d="M256,49.47c67.27,0,75.23.26,101.8,1.47,24.56,1.12,37.9,5.22,46.78,8.67a78,78,0,0,1,29,18.85,78,78,0,0,1,18.85,29c3.45,8.88,7.55,22.22,8.67,46.78,1.21,26.57,1.47,34.53,1.47,101.8s-.26,75.23-1.47,101.8c-1.12,24.56-5.22,37.9-8.67,46.78a83.51,83.51,0,0,1-47.81,47.81c-8.88,3.45-22.22,7.55-46.78,8.67-26.56,1.21-34.53,1.47-101.8,1.47s-75.24-.26-101.8-1.47c-24.56-1.12-37.9-5.22-46.78-8.67a78,78,0,0,1-29-18.85,78,78,0,0,1-18.85-29c-3.45-8.88-7.55-22.22-8.67-46.78-1.21-26.57-1.47-34.53-1.47-101.8s.26-75.23,1.47-101.8c1.12-24.56,5.22-37.9,8.67-46.78a78,78,0,0,1,18.85-29,78,78,0,0,1,29-18.85c8.88-3.45,22.22-7.55,46.78-8.67,26.57-1.21,34.53-1.47,101.8-1.47m0-45.39c-68.42,0-77,.29-103.87,1.52S107,11.08,91,17.3A123.68,123.68,0,0,0,46.36,46.36,123.68,123.68,0,0,0,17.3,91c-6.22,16-10.48,34.34-11.7,61.15S4.08,187.58,4.08,256s.29,77,1.52,103.87S11.08,405,17.3,421a123.68,123.68,0,0,0,29.06,44.62A123.52,123.52,0,0,0,91,494.69c16,6.23,34.34,10.49,61.15,11.71s35.45,1.52,103.87,1.52,77-.29,103.87-1.52S405,500.92,421,494.69A128.74,128.74,0,0,0,494.69,421c6.23-16,10.49-34.34,11.71-61.15s1.52-35.45,1.52-103.87-.29-77-1.52-103.87S500.92,107,494.69,91a123.52,123.52,0,0,0-29.05-44.62A123.68,123.68,0,0,0,421,17.3c-16-6.22-34.34-10.48-61.15-11.7S324.42,4.08,256,4.08Z"
-                transform="translate(-4.08 -4.08)" />
-              <path
-                d="M256,126.64A129.36,129.36,0,1,0,385.36,256,129.35,129.35,0,0,0,256,126.64ZM256,340a84,84,0,1,1,84-84A84,84,0,0,1,256,340Z"
-                transform="translate(-4.08 -4.08)" />
-              <circle cx="386.4" cy="117.44" r="30.23" />
-            </svg>
-            </svg>
-          </a>
-          <a href="https://github.com/kaori221b" class="btn btn-ghost h-20 w-1/3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #fff;">
-              <path
-                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-            </svg>
-          </a>
-        </div>
-        <!-- ここに自己紹介を追加-->
-        <div class="grid card bg-base-100 mb-8">
-          <div class="card-body text-left">
-            <h2 class="card-title" style="color: #69aa2f;">自己紹介</h2>
-            <p>
-              <span style="font-weight: bold;">かおり(鹿児島在住)</span><br><br>
-              映画鑑賞と絵を描くことが好き。<br>
-              洋画、邦画、アニメ映画幅広く観ます。<br>
-              最近の推しは<a href="https://twitter.com/yuta_tachibana_" target="_blank"
-                style="font-weight: bold; color: #69aa2f;">立花裕大</a>さんが演じる豊前江。<br>
-
-              <span style="margin-top: 50px; display: block; text-align: right;"> 書いた日：2022/09/22</span>
-
-            </p>
-          </div>
-        </div>
-        <!-- サイト説明-->
-        <div class="grid card bg-base-100 mb-8">
-          <div class="card-body text-left">
-            <h2 class="card-title" style="color: #69aa2f;">サイト説明</h2>
-            <p>
-              GMOペパボオフィスで開催された<br>
-              <a href="https://kagoshima-mk.connpass.com/event/259589/" target="_blank" style=" color: #69aa2f;">鹿児島.mk
-                #26 Webサイト制作体験会 (HTML/CSS入門)</a>に参加して
-              制作したプロフィールサイトです。<br>
-              スタッフの皆様、GMOペパボ様いつもありがとうございます！
-
-            </p>
-          </div>
-        </div>
-        <!--参考にしたサイト-->
-        <div class="grid card bg-base-100 mb-8">
-          <div class="card-body text-left">
-            <h2 class="card-title" style="color: #69aa2f;">参考サイト</h2>
-            <div class="card w-70 glass" style="margin-bottom: 20px;">
-              <a href="https://hayasaki-shunsuke.github.io/" target="_blank">
-                <figure><img src="image/img02.png" alt="qiita" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">HAYAPI</h2>
-                  <p>はやぴさんのサイト</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-active">Learn now!</button>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="card w-70 glass" style="margin-bottom: 20px;">
-              <a href="https://qiita.com/flatsato/items/928974413e8da755bd10" target="_blank">
-                <figure><img src="image/img01.png" alt="qiita" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Qiita</h2>
-                  <p>SNSアイコン SVGまとめ</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-active">Learn now!</button>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="card w-70 glass">
-              <a href="https://daisyui.com/" target="_blank">
-                <figure><img src="image/img03.jpeg" alt="qiita" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">daisyUI</h2>
-                  <p>勉強会で存在を知ったフレームワーク。Bootstrapとの違いがいつかわかるといいねって気持ちで触ります。</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-active">Learn now!</button>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- アコーディオン-->
-        <div class="grid card bg-base-100 mb-8">
-          <div class="card-body text-left">
-
-            <input id="acd-check2" class="acd-check" type="checkbox">
-            <label class="acd-label card-title" for="acd-check2">過去参加勉強会</label>
-            <div class="acd-content">
-              <ul>
-                <li>鹿児島.mk #4 もくもく会 with 企画会議</li>
-                <li>鹿児島.mk #5 2019年最後のLT大会</li>
-                <li>ゆるやかな合同Web勉強会</li>
-                <li>Rails Girls Kagoshima 1st</li>
-                <li>鹿児島.mk #26 Webサイト制作体験会 (HTML/CSS入門)</li>
-              </ul>
-            </div>
-            <!--リスト２-->
-            <input id="acd-check1" class="acd-check" type="checkbox">
-            <label class="acd-label card-title" for="acd-check1">今年観た映画</label>
-            <div class="acd-content">
-              <ul>
-                <li>呪術廻戦0</li>
-                <li>スパイダーマン：ノーウェイホーム</li>
-                <li>あんさんぶるスターズ!!</li>
-                <li>THE BATMAN</li>
-                <li>モービウス</li>
-                <li>ファンタスティックビースト</li>
-                <li>名探偵コナン</li>
-                <li>ドクター・ストレンジ</li>
-                <li>シン・ウルトラマン</li>
-                <li>犬王</li>
-                <li>特『刀剣乱舞-花丸-』～月ノ巻～</li>
-                <li>トップガン</li>
-                <li>ジュラシックワールド</li>
-                <li>特『刀剣乱舞-花丸-』～華ノ巻～</li>
-                <li>刀剣乱舞 静かの海のパライソ 4DX</li>
-                <li>沈黙のパレード</li>
-                <li>劇場版 うたの☆プリンスさまっ♪ マジLOVEスターリッシュツアーズ</li>
-              </ul>
-            </div>
-            <!--リスト-->
-
-
-
-          </div>
-        </div>
-      </div>
+    <div>
+      <p>
+        汝の名前を教えたまえ〜〜〜！
+      </p>
+      <button class="name btn btn-active" style="margin: 2%; width: 80%;">教える</button>
+      <div class="dreamname" style="font-size: 2.2em;"></div>
     </div>
-  </main>
-  <footer class="footer footer-center p-10 text-base-content rounded" style="color: white;">
-    <!-- 早く終わった人はここにフッターを追加してみてください-->
-    <p>© 2022 kaori</p>
-  </footer>
+  </div>
+
+  </div>
 </body>
 
 </html>

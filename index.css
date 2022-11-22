@@ -1,81 +1,59 @@
+html {
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
 body {
   width: 100%;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  /* background-image: url("hayapi.jpg"); */
-  font-family: 'Noto Sans JP', sans-serif;
-  letter-spacing: .5px;
+  margin: 0;
+  padding: 0 20px 20px 20px;
+}
+
+.main_content {
+  border: 5px solid black;
+  width: 80%;
+  margin: 2% auto;
+  padding: 5% ;
+  text-align:center;
+}
+
+.main_visual {
+  width:50%;
+  margin: 5% auto;
 
 }
 
-body:after {
-  /*擬似要素をつくる*/
-  position: fixed;
-  /*固定配置*/
-  top: 0;
-  left: 0;
-  /*左上に固定*/
-  width: 100%;
-  min-height: 100vh;
-  /*画面全体を覆う*/
-  content: "";
-  background: #fff7d5;
-  /*保険用*/
-  background-image: url(image/bg.png);
-  background-size: auto 100%;
-  z-index: -1;
-  /*背景にするため*/
+.main_visual img{
+  WIDTH: 100%;
 }
 
+/*
 
-h2.card-title {
-  font-weight: 900;
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #00539F;
+  text-shadow: 3px 3px 1px black;
 }
+*/
 
-
-.title {
-  font-size: 7.5rem;
-  font-family: 'Cabin Sketch', cursive, "Hiragino Sans", "Helvetica Black", "Arial Black", "sans-serif";
-  /* ここに色を追加 */
-  color: #fff;
-}
-
-.content {
-  width: 200px;
-  padding: 10px;
-  box-sizing: border-box;
+img {
+  display: block;
   margin: 0 auto;
 }
 
-
-
-.acd-check {
-  display: none;
-}
-
-.acd-label {
-  background: #333;
-  color: #fff;
-  display: block;
-  margin-bottom: 1px;
-  padding: 10px;
-}
-
-.acd-content {
-  height: 0;
-  opacity: 0;
-  padding: 0 10px;
-  transition: .5s;
-  visibility: hidden;
-}
-
-.acd-check:checked+.acd-label+.acd-content {
-  height: auto;
-  opacity: 1;
-  padding: 10px;
-  visibility: visible;
-}
 
 ul {
   padding-left: 25px;
@@ -88,8 +66,4 @@ li {
   padding: 0.5em 0;
   /*前後の文との余白*/
   list-style-type: circle;
-}
-
-.ring {
-  border: #db2f15;
 }
