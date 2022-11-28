@@ -21,21 +21,21 @@ body {
   padding: 0 20px 20px 20px;
 }
 
-.main_content {
+#main_content {
   border: 5px solid black;
   width: 80%;
   margin: 2% auto;
-  padding: 5% ;
-  text-align:center;
+  padding: 5%;
+  text-align: center;
 }
 
 .main_visual {
-  width:50%;
+  width: 50%;
   margin: 5% auto;
 
 }
 
-.main_visual img{
+.main_visual img {
   WIDTH: 100%;
 }
 

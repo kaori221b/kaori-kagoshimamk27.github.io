@@ -47,11 +47,15 @@ const toggleMode = () => {
     // 現在がダークモードなら、明るいテーマを指定する
     document.documentElement.dataset.theme = mode.light;
     myImage.setAttribute('src', 'images/mk_0.png');
+    var elem = document.getElementById("main_content");
+    elem.style.border = "5px solid black";
 
   } else {
     // 現在がダークモードでないなら、ダークモードのテーマを指定する
     document.documentElement.dataset.theme = mode.dark;
     myImage.setAttribute('src', 'images/mk_1.png');
+    var elem = document.getElementById("main_content");
+    elem.style.border = "5px solid #fff";
   };
 };
 // この関数は次のようにも書ける
